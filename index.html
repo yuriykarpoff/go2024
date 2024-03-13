@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#rooms">Залы</a></li>
                 <li><a href="#about">О нас</a></li>
-                <li><a href="">Бронь</a></li>
+                <li><a href="#booking">Бронь</a></li>
                 <li><a href="">Отзывы</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
@@ -76,6 +76,52 @@
                 <li><a href="wildwest.html">Wild west</a></li>
                 <li><a href="neon.html">Neon style</a></li>
             </ol>
+        </section>
+
+        <section id="booking">
+            <h2>Забронировать</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <fieldset>
+                    <label><input type="radio" value="80s" name="room">80's vibes</label>
+                    <label><input type="radio" value="starWars" name="room">Star wars</label>
+                    <label><input type="radio" value="wildWest" name="room">Wild west</label>
+                    <label><input type="radio" value="neonStyle" name="room">Neon style</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Собери набор развлечений</legend>
+                    <fieldset>
+                        <legend>Приставка</legend>
+                        <label><input type="radio" value="ps" name="console">PlayStation</label>
+                        <label><input type="radio" value="sega" name="console">Sega Mega Drive</label>
+                        <label><input type="radio" value="x-box" name="console">X-Box One S</label>
+                        <label><input type="radio" value="dendy" name="console">Dendy</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Настольные игры</legend>
+                        <label><input type="checkbox" value="jenga" name="tableGames">Jenga</label>
+                        <label><input type="checkbox" value="monopole" name="tableGames">Monopoly</label>
+                        <label><input type="checkbox" value="manchkin" name="tableGames">Манчкин</label>
+                        <label><input type="checkbox" value="alias" name="tableGames">Alias</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дополнтельно</legend>
+                        <label><input type="checkbox" value="karaoke" name="services">Караоке</label>
+                        <label><input type="checkbox" value="vr" name="services">VR</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбери дату и время</legend>
+                    <label>Дата* <input type="date" required name="date"></label>
+                    <label>Время* <input type="time" required name="time"></label>
+                    <label>Количество человек* <input type="number" required name="countPeople"></label>
+                    <label>Имя* <input type="text" required name="firstName"></label>
+                    <label>Фамилия* <input type="text" required name="lastName"></label>
+                    <label>Номер телефона* <input type="tel" required name="telephone"></label>
+                    <label><input type="checkbox" value="over18YearsOld" name="age"> Я старше 18 лет</label>
+                </fieldset>
+                <button type="submit">Забронировать</button>
+                <label><input type="checkbox" required value="dataProcessingAgree" name="dataProcessing">Согласен на обработку данных</label>
+            </form>
         </section>
 
         <section id="about">
